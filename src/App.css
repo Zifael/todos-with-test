@@ -1,38 +1,141 @@
+*{
+    margin: 0;
+}
+
 .App {
-  text-align: center;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todos {
+    margin: 25% auto;
+    width: 740px;
+    height: auto;
+    background-color: rgb(245,245,245);
+    padding-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todos__title {
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    font-weight: 100;
+    color: rgb(233,217,216);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todos__input__block {    
+    width: 90%;
+    display: flex;    
+    align-items: center;
+    margin: 3px auto;
+    background-color: white;
+    border-radius: 5px;    
 }
 
-.App-link {
-  color: #61dafb;
+.todos__arrowDown {
+    color: rgb(135, 133, 133);
+    margin: 0 23px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addTodo {
+    margin-right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todos__input {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    
+}
+
+
+.todos__task {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 1.5px auto;
+    background-color: white;    
+}
+
+.todos__task__icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(37, 218, 37);
+    font-size: 30px;
+}
+
+.todos__task__title {
+    font-size: 25px;
+    color: black;
+    padding: 10px;
+    font-weight: 200;   
+}
+
+.isCompleted {
+    text-decoration:line-through
+}
+
+.todos__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; 
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.todos__menu__title {
+    margin: 0px 20px;
+    color: rgb(135, 133, 133);
+    font-size: 16px;
+}
+
+.todos__menu__block__button {
+    display: flex;
+}
+
+.todos__menu__button {
+    padding: 5px;
+    background-color: white;    
+    color: rgb(135, 133, 133);
+    border: none;   
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.todos__menu__button:first-child {
+    margin-left: 0px;
+}
+
+.active{
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 3px;
+}
+
+.todos__menu__clearCompleted {
+    margin: 0px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(135, 133, 133);
+    cursor: pointer;
 }
