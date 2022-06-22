@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/todos-with-test/static/css/main.1c03b6af.css",
+    "main.js": "/todos-with-test/static/js/main.4e27d5e5.js",
+    "index.html": "/todos-with-test/index.html",
+    "main.1c03b6af.css.map": "/todos-with-test/static/css/main.1c03b6af.css.map",
+    "main.4e27d5e5.js.map": "/todos-with-test/static/js/main.4e27d5e5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c03b6af.css",
+    "static/js/main.4e27d5e5.js"
+  ]
+}
